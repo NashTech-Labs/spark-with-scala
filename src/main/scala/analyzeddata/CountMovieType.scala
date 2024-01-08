@@ -18,6 +18,6 @@ object CountMovieType extends App {
       .agg(count("movietype").alias("count"))
       .orderBy(asc("type"))
 
-  //top dis[play the output
+  //to display the output
   countDF.show(false)
 }
